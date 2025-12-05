@@ -13,7 +13,9 @@ struct MainView: View {
     var body: some View {
         TabView(selection: $selectedTab) {
             NavigationStack {
-                Home()
+                Home().onAppear {
+                  
+                }
                     
             }
             .tabItem { Label("Home", systemImage: "creditcard") }
